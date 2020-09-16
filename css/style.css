@@ -28,8 +28,46 @@ body {
 }
 
 a {
+    font-family: 'Cuprum', sans-serif;
     text-decoration: none;
     color: var(--white);
+}
+
+.header-logo:hover {
+    background-color: #EE3643;
+}
+
+.header-menu-search:focus {
+    color: #000000;
+    background-color: var(--white);
+}
+
+.button-login:hover {
+    color: var(--basic-red);
+}
+
+.site-nav a:hover {
+    background-color: #293449;
+}
+
+.offers-button:hover {
+    background-color: #C5C5C5;
+    opacity: 0.3;
+}
+
+.button:hover {
+    background-color: #C5C5C5;    
+}
+
+.main-services-menu a:hover {
+    background: #293449;
+}
+
+.footer-assortment a:hover,
+.footer-nav a:hover,
+.footer-mail a:hover,
+.footer-developed a:hover {
+    text-decoration-line: underline;
 }
 
 img {
@@ -202,16 +240,18 @@ button {
     background-color: #32425C;
 }
 
-.main-services-menu a:focus {
-    color: #32425C;
-    background-color: var(--white);
-}
-
 .main-services-item h3 {
     font-size: 30px;
     font-weight: 400;
     line-height: 30px;
     color: #32425C;
+}
+
+.credit-button {
+    font-family: 'Cuprum', sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    background-color: #FF5357;
 }
 
 .main-info h2 {
@@ -277,11 +317,89 @@ button {
     color:#FFD180;
 }
 
-.hidden-header {display: none}
+.hidden-header {
+    display: none;
+}
 
 .button {
+    font-family: 'Cuprum', sans-serif;
     font-size: 14px;
     line-height: 18px;
     color: var(--white);
     background-color: var(--basic-red);
+}
+
+/* Стили для каталога */
+
+.header-menu-basket {
+    background-color: var(--basic-red);
+}
+
+.header-login a {
+    color: #000000;
+}
+
+.main-catalog-menu {
+    font-family: 'PT Sans', sans-serif;
+    font-style: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.main-catalog-menu a {
+    font-family: 'PT Sans', sans-serif;
+    font-style: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color:#000000;
+}
+
+.menu-list-items a {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color:#000000;
+}
+
+.catalog-perforators-info {
+    background-color: var(--basic-background);
+}
+
+.catalog-perforators-info h2 {
+    font-size:30px;
+    line-height: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.catalog-perforators-info p {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 13px;
+}
+
+.button-buy {
+    font-family: 'Cuprum', sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    background-color: var(--basic-green);
+}
+
+.button-buy:hover {
+    background: #5FBB2D;
+}
+
+.button-bookmark {
+    font-family: 'Cuprum', sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color:  #32425C;
+    background-color: var(--white);
+    border: 3px solid #63A63E;
+    box-sizing: border-box;
+}
+
+.button-bookmark:hover {
+    border: 3px solid #32425C;
 }
