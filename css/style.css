@@ -136,6 +136,7 @@ button {
     line-height: 21px;
     color: black;
     border:none;
+    background-color: var(--white);
 }
 
 .main-nav {
@@ -361,8 +362,20 @@ button {
     background-color: var(--basic-red);
 }
 
-.header-login a {
+.header-login-name {
+    background-color: var(--white);
     color: #000000;
+}
+
+.header-login-link {
+    font-family: 'Cuprum', sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    color:#32425C;
+}
+
+.header-login-link:hover {
+    color: var(--basic-red);
 }
 
 .main-catalog-menu {
