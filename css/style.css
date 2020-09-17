@@ -51,8 +51,7 @@ a {
 }
 
 .offers-button:hover {
-    background-color: #C5C5C5;
-    opacity: 0.3;
+    background-color:rgba(197, 197, 197, .3);
 }
 
 .button:hover {
@@ -155,8 +154,11 @@ button {
 .offers-button {
     font-size:14px;
     line-height:18px;
-    background-color: var(--white);
-    opacity: 0.3;
+    color: var(--white);
+    background-color: rgba(255, 255, 255, .3);
+    border: none;
+    width: 135px;
+    height: 38px;
 }
 
 .offer-materials {
@@ -215,6 +217,9 @@ button {
     font-size: 17px;
     line-height: 18px;
     background-color: var(--basic-red);
+    border: none;
+    width: 141px;
+    height: 38px;
 }
 
 .main-services {
@@ -251,7 +256,11 @@ button {
     font-family: 'Cuprum', sans-serif;
     font-size: 14px;
     line-height: 18px;
+    color: var(--white);
     background-color: #FF5357;
+    border: none;
+    width: 195px;
+    height: 38px;
 }
 
 .main-info h2 {
@@ -327,8 +336,22 @@ button {
     line-height: 18px;
     color: var(--white);
     background-color: var(--basic-red);
+    width: 192px;
+    height: 38px;
+    border: none;
 }
 
+.button:hover {
+    background: #CA2C37;
+}
+
+.button-info {
+    width: 220px;
+}
+
+.button-contacts {
+    width: 300px;
+}
 /* Стили для каталога */
 
 .header-menu-basket {
