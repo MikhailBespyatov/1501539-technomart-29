@@ -131,9 +131,11 @@ button {
 }
 
 .button-login {
+    font-family: 'Cuprum', sans-serif;
     font-size: 21px;
     line-height: 21px;
     color: black;
+    border:none;
 }
 
 .main-nav {
@@ -152,6 +154,7 @@ button {
 }
 
 .offers-button {
+    font-family: 'Cuprum', sans-serif;
     font-size:14px;
     line-height:18px;
     color: var(--white);
@@ -406,6 +409,9 @@ button {
     line-height: 18px;
     text-transform: uppercase;
     background-color: var(--basic-green);
+    border: none;
+    width: 135px;
+    height: 38px;
 }
 
 .button-buy:hover {
@@ -421,6 +427,8 @@ button {
     background-color: var(--white);
     border: 3px solid #63A63E;
     box-sizing: border-box;
+    width: 135px;
+    height: 38px;
 }
 
 .button-bookmark:hover {
