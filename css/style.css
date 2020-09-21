@@ -71,15 +71,16 @@ a {
     background-color:rgba(197, 197, 197, .3);
 }
 
-.offers-button:active:focus {
+.offers-button:active {
     background-color: rgba(169, 169, 169, .3);
-    border: none;
-    outline: 0;
-    box-shadow: none;
 }
 
 .button:hover {
     background: #BA2732;
+}
+
+.button:active {
+    background-color: var(--error);
 }
 
 .main-services-menu a:hover {
@@ -351,6 +352,14 @@ button {
     border: none;
     width: 195px;
     height: 38px;
+}
+
+.credit-button:hover {
+    background-color: #CA2C37;
+}
+
+.credit-button:active {
+    background-color: var(--error);
 }
 
 .main-info h2 {
