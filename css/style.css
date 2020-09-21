@@ -37,20 +37,27 @@ a {
     background-color: #EE3643;
 }
 
-.header-menu-search:focus {
-    color: #000000;
-    background-color: var(--white);
-}
+
 
 .button-login:hover {
     color: var(--basic-red);
-    background: rgba(0, 0, 0, 0.0001);
 }
 
 .button-login:active {
     color: var(--basic-greylight);
-    background: rgba(0, 0, 0, 0.0001);
 }
+
+.button-login:hover svg #icon-login,
+.button-login:hover svg #icon-login2 {
+    fill: var(--basic-grey);
+}
+
+.button-login:active svg #icon-login,
+.button-login:active svg #icon-login2 {
+    fill: #C5C5C5;
+}
+
+
 
 .site-nav a:hover {
     background-color: #293449;
@@ -71,11 +78,6 @@ a {
     box-shadow: none;
 }
 
-
-.button:hover {
-    background-color: #C5C5C5;    
-}
-
 .button:hover {
     background: #BA2732;
 }
@@ -88,13 +90,15 @@ a {
     background: #FFFFFF;
     border: 1px solid #EAEAEA;
     box-sizing: border-box;
+    filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
 }
 
-.popular-manufactures-item img:active {
+.popular-manufactures-item a:active {
     background: rgba(0, 0, 0, 0.0001);
     border: 1px solid #EAEAEA;
     box-sizing: border-box;
     opacity: 0.5;
+    filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
 }
 
 .footer-assortment a:hover,
@@ -150,9 +154,34 @@ button {
     font-size: 18px;
 }
 
+.header-menu-nav img {
+    opacity: 0.3;
+}
+
+.header-menu-nav a:hover img {
+    opacity: 1;
+}
+
+.header-menu-nav a:active {
+    color: rgba(255, 255, 255, 0.5);
+    background-color: #161D29;
+}
+
+.header-menu-nav a:active img {
+    opacity: 0.3;
+}
+
 .header-checkout {
     font-size: 18px;
     background-color: var(--basic-green);
+}
+
+.header-checkout:hover {
+    background-color: var(--success);
+}
+
+.header-checkout:active {
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .header-info {
@@ -407,6 +436,18 @@ button {
 .button-contacts {
     width: 300px;
 }
+
+.footer-social-menu a svg:hover #vk,
+.footer-social-menu a svg:hover #fb,
+.footer-social-menu a svg:hover #insta {
+    fill: var(--basic-red);
+}
+
+.footer-social-menu a svg:active #vk,
+.footer-social-menu a svg:active #fb,
+.footer-social-menu a svg:active #insta {
+    fill: var(--basic-red);
+}
 /* Стили для каталога */
 
 .header-menu-basket {
@@ -421,6 +462,18 @@ button {
 .header-login-name:active {
     color: var(--basic-greylight);
     background: rgba(0, 0, 0, 0.0001);
+}
+
+.header-login-name:hover svg #icon-login,
+.header-login-name:hover svg #icon-login2,
+.header-login-name:hover svg #icon-user {
+    fill: var(--basic-grey);
+}
+
+.header-login-name:active svg #icon-login,
+.header-login-name:active svg #icon-login2,
+.header-login-name:active svg #icon-user {
+    fill: var(--basic-greylight);
 }
 
 .header-login-link {
