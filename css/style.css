@@ -232,7 +232,7 @@ button {
     width: 940px;
     height: 60px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0;
 }
 
 .site-nav {
@@ -692,8 +692,15 @@ button {
     color:#000000;
 }
 
-.catalog-perforators-info {
+.perforators-info-wrapper {
     background-color: var(--basic-background);
+}
+
+.catalog-perforators-info {
+    width: 940px;
+    height: 261px;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .catalog-perforators-info h2 {
@@ -766,6 +773,7 @@ button {
 
 .main-header {
     margin-bottom: 60px;
+    height: 320px;
 }
 
 .header-menu {
@@ -781,9 +789,60 @@ button {
     grid-template-columns: min-content 1fr max-content;
     width: 940px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 ;
+}
+
+.main-catalog-menu {
+    position: absolute;
+    width: 463px;
+    height: 18px;
+    left: 140px;
+    top: 341px;
+}
+
+.catalog-menu-items {
+    display: grid;
+    grid-template-columns: repeat(7, max-content);
+    gap: 17px;
+}
+        
+.catalog-goods-menu {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0;
+    display:grid;
+    grid-template-columns: repeat(4, 220px);
+    grid-template-rows: 89px 318px 318px 318px;
+    column-gap: 20px;
+    row-gap: 18px;
+    margin-bottom: 145px;
+}
+
+.menu-list-items {
+    margin:0;
+    padding:0;
+    position: absolute;
+    width: 284px;
+    height: 38px;
+    left: 380px;
+    top: 1542px;
+    display: grid;
+    grid-template-columns: 38px 38px 38px 140px;
+    grid-template-rows: repeat(4, 38px);
+    gap:10px;
+}
+
+.menu-list-items li {
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.menu-list-items li:active {
+    border: 1px solid #EE3643;
+    box-sizing: border-box;
+    border-radius: 2px;
 }
 
 
-
-        
