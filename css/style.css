@@ -131,9 +131,7 @@ button {
     color: var(--white);
 }
 
-.main-header {
-     background-color: var(--basic-background);
-}
+
 
 .header-logo {
    background: url(../img/header-logo.png) no-repeat center;
@@ -196,6 +194,7 @@ button {
     width: 940px;
     margin: 0 auto;
     padding: 0 10px;
+    margin-bottom:45px;
 }
 
 
@@ -774,6 +773,13 @@ button {
 .main-header {
     margin-bottom: 60px;
     height: 320px;
+    background-color: var(--basic-background);
+}
+
+.main-catalog-header {
+    margin-bottom: 21px;
+    height: 320px;
+    background-color: var(--basic-background);
 }
 
 .header-menu {
@@ -792,18 +798,14 @@ button {
     padding: 0 ;
 }
 
-.main-catalog-menu {
-    position: absolute;
-    width: 463px;
-    height: 18px;
-    left: 140px;
-    top: 341px;
-}
-
 .catalog-menu-items {
     display: grid;
     grid-template-columns: repeat(7, max-content);
     gap: 17px;
+    width: 940px;
+    padding: 0;
+    margin:0 auto;
+    margin-bottom: 20px;
 }
         
 .catalog-goods-menu {
@@ -815,21 +817,23 @@ button {
     grid-template-rows: 89px 318px 318px 318px;
     column-gap: 20px;
     row-gap: 18px;
-    margin-bottom: 145px;
+    margin-bottom: 49px;
+}
+
+.catalog-menu-list {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 59px ;
 }
 
 .menu-list-items {
-    margin:0;
-    padding:0;
-    position: absolute;
-    width: 284px;
-    height: 38px;
-    left: 380px;
-    top: 1542px;
     display: grid;
     grid-template-columns: 38px 38px 38px 140px;
-    grid-template-rows: repeat(4, 38px);
     gap:10px;
+    margin:0;
+    padding:0;  
+    padding-left: 242px;  
 }
 
 .menu-list-items li {
