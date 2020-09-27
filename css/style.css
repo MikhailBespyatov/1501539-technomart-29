@@ -452,6 +452,7 @@ button {
     padding-right: 24px;
     padding-left: 24px;
     padding-bottom: 21px;
+    margin-bottom:20px;
 }
 
 
@@ -981,11 +982,9 @@ button {
     width: 940px;
     margin: 0 auto;
     padding: 0;
-    display:grid;
-    grid-template-columns: repeat(4, 220px);
-    grid-template-rows: 89px 318px 318px 318px;
-    column-gap: 20px;
-    row-gap: 18px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin-bottom: 49px;
 }
 
@@ -997,19 +996,28 @@ button {
 }
 
 .menu-list-items {
-    display: grid;
-    grid-template-columns: 38px 38px 38px 140px;
-    gap:10px;
+    display: flex;
     margin:0;
     padding:0;  
     padding-left: 242px;  
 }
 
 .menu-list-items li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 38px;
+    min-width: 38px;
+    margin-right: 10px;
     border: 1px solid #E5E5E5;
     box-sizing: border-box;
     border-radius: 2px;
     text-align: center;
+}
+
+.menu-list-items li:nth-last-child(1) {
+    padding-left: 31px;
+    padding-right: 31px;
 }
 
 .menu-list-items li:active {
