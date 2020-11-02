@@ -1,6 +1,6 @@
 //Модальное окно логина
 const popup = document.querySelector('.modal-login');
-const openPopupButton = document.querySelector('.header-checkout');
+let openPopupButton = document.querySelector('.button-contacts');
 const closePopupButton = popup.querySelector('.modal-close');
 const loginForm = popup.querySelector('.modal-login-form');
 const loginName = popup.querySelector('[name=login-name]');
@@ -56,7 +56,7 @@ loginForm.addEventListener("submit", function (evt) {
 
 //Модальное окно карты
 const mapPopup = document.querySelector('.modal-map');
-const mapOpenPopupButton = document.querySelector('.button-contacts');
+const mapOpenPopupButton = document.querySelector('.map-button');
 const mapClosePopupButton = mapPopup.querySelector('.modal-close');
 
 mapOpenPopupButton.addEventListener('click', function (evt) {
