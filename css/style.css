@@ -869,7 +869,7 @@ button {
     width: 940px;
     margin: 0 auto;
     padding: 0 10px;
-    margin-bottom: 55px;
+    margin-bottom: 70px;
 }
 
 .main-services-bar {
@@ -1103,9 +1103,8 @@ button {
     font-size: 13px;
 }
 
-.main-info span {
-    display: inline-block;
-    margin-top: -1px;
+.paragraf-info-wrapper {
+    margin-top: 25px;
 }
 
 .main-info-menu {
