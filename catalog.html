@@ -16,7 +16,15 @@
            <a href="#">Техномарт</a>
          </div>
       <ul class="header-menu-nav">
-         <li><a class="header-menu-search" href="#"> Поиск:</a></li>       
+        <li><form class="header-menu-search" method="POST" action="https://echo.htmlacademy.ru"> 
+          <input type="search"  placeholder="Поиск:">
+          <div class="search-svg">
+            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path id="search-svg" fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="rgba(255,255,255, 0.3)"/>
+              </svg>
+          </div>
+        </form>
+        </li>        
          <li><a class="header-menu-bookmark" href="#"> Закладки: 0</a></li>
          <li><a class="header-menu-cart catalog-header-menu-cart" href="#">Корзина: 10</a></li>     
       </ul>
@@ -30,29 +38,31 @@
         <h2 class="hidden-header">Интернет-магазин</h2>
         <div class="catalog-info-item-wrapper">
 
-        <p class="header-info-item">Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта</p>
+        <p class="header-info-item">Интернет-магазин<br>строительных материалов<br><span>и инструментов для ремонта</span></p>
         
         </div>
 
-        <article class="header-adress catalog-header-adress">
+        <div class="catalog-header-adress">
+        <article class="header-adress">
           <h2 class="hidden-header">Наш адрес</h2>
-          <p ><a class="header-adress-info" href="tel::+7(812)555-05-55"> <img src="img/icon-phone.svg" width="19" height="19" alt=""> +7 (812) 555-05-55</a>
-          <span class="adress-info-street">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span></p>
+          <a class="header-adress-info" href="tel::+7(812)555-05-55"> +7 (812) 555-05-55</a>
+          <span class="adress-info-street">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+          <div class="adres-info-phone-svg"> <img src="img/icon-phone.svg" width="19" height="19" alt=""></div>
          </article>
-      
+        </div>
 
 
       <div class="header-catalog-login">
-        
-        <a class="header-login-name" href="#"> <svg aria-hidden="true" focusable="false" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path id="icon-user" d="M17.881 14.166C15.737 13.431 13.625 12.5 12.674 11.776C12.017 11.275 11.904 10.158 12.157 9.361C13.275 8.458 14.021 6.884 14.021 5.083C14.021 2.276 12.221 0 10 0C7.77902 0 5.97901 2.276 5.97901 5.083C5.97901 6.884 6.72501 8.457 7.84201 9.36C8.09501 10.158 7.98302 11.275 7.32502 11.776C6.37502 12.5 4.26201 13.43 2.11801 14.166C-0.0259852 14.902 1.48343e-05 18 1.48343e-05 18H20C20 18 20.025 14.901 17.881 14.166Z" fill="#C5C5C5"/>
-          </svg>           
+        <a class="header-login-name" href="#">          
           Равшан Джамшутович 
-          <svg aria-hidden="true" focusable="false" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path id="icon-login" d="M20 8.5L11.125 0V6H5.125V11H11.125V17L20 8.5Z" fill="#C5C5C5"/>
-            <path id="icon-login2" d="M2.10591 13.952V3.048C2.12391 2.672 2.27691 1.991 3.11591 1.991H8.14291V0H3.11591C0.937914 0 0.111914 1.81 0.0869141 3.027V13.973C0.111914 15.189 0.937914 17 3.11591 17H8.14291V15.01H3.11591C2.27691 15.01 2.12391 14.327 2.10591 13.952Z" fill="#C5C5C5"/>
-            </svg>
-            
+        
+        <div class="catalog-login-avatar-svg"><svg aria-hidden="true" focusable="false" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path id="icon-user" d="M17.881 14.166C15.737 13.431 13.625 12.5 12.674 11.776C12.017 11.275 11.904 10.158 12.157 9.361C13.275 8.458 14.021 6.884 14.021 5.083C14.021 2.276 12.221 0 10 0C7.77902 0 5.97901 2.276 5.97901 5.083C5.97901 6.884 6.72501 8.457 7.84201 9.36C8.09501 10.158 7.98302 11.275 7.32502 11.776C6.37502 12.5 4.26201 13.43 2.11801 14.166C-0.0259852 14.902 1.48343e-05 18 1.48343e-05 18H20C20 18 20.025 14.901 17.881 14.166Z" fill="#C5C5C5"/>
+          </svg> </div>
+        <div class="catalog-login-svg"><svg aria-hidden="true" focusable="false" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path id="icon-login" d="M20 8.5L11.125 0V6H5.125V11H11.125V17L20 8.5Z" fill="#C5C5C5"/>
+          <path id="icon-login2" d="M2.10591 13.952V3.048C2.12391 2.672 2.27691 1.991 3.11591 1.991H8.14291V0H3.11591C0.937914 0 0.111914 1.81 0.0869141 3.027V13.973C0.111914 15.189 0.937914 17 3.11591 17H8.14291V15.01H3.11591C2.27691 15.01 2.12391 14.327 2.10591 13.952Z" fill="#C5C5C5"/>
+          </svg></div>
         </a>
 
       <div class="catalog-custom-nav">
@@ -107,7 +117,7 @@
           <h3>Сортировка:</h3>
           <ul class="catalog-sorting-menu">
             <li><a class="catalog-sorting-checked" href="#">По цене</a></li>
-            <li><a href="#">По типу</a></li>            
+            <li><a class="catalog-sorting-type" href="#">По типу</a></li>            
             <li><a href="#">По функционалу</a></li>
           </ul>
         <div class="sorting-controls">
@@ -138,11 +148,11 @@
             </div>
             <div class="price-controls">
               <label class="min-price">
-                <input type="number" name="min-price" value="0">
+                <input type="number" name="min-price" placeholder="0">
               </label>
               <span>—</span>
               <label class="max-price">
-                <input type="number" name="max-price" value="30000">
+                <input type="number" name="max-price" placeholder="30000">
               </label>
             </div>
           </div>
@@ -200,6 +210,7 @@
               <span class="goods-item-oldprice">30500 Р.</span>
           </a>
           <button class="prise-button" type="button" aria-label="Добавить Перфоратор BOSCH BFG 6000 в корзину"><span>25500 Р.</span></button>
+          <div class="popular-goods-item-buttons"><span class="good-item-bookmark"><button class="button-buy" type="button">Купить</button> <button class="button-bookmark" type="button">В Закладки</button></span></div>
           </li>
           <li>
           <a href="#" class="popular-goods-item bfg-6000">
@@ -211,6 +222,7 @@
               <span class="goods-item-oldprice">30500 Р.</span> 
           </a>
           <button class="prise-button" type="button" aria-label="Добавить Перфоратор BOSCH BFG 6000 в корзину"><span>25500 Р.</span></button>
+          <div class="popular-goods-item-buttons"><span class="good-item-bookmark"><button class="button-buy" type="button">Купить</button> <button class="button-bookmark" type="button">В Закладки</button></span></div>
         </li>
         <li>
           <a href="#" class="popular-goods-item bfg-6000 new">
@@ -222,6 +234,7 @@
                <span class="goods-item-oldprice">30500 Р.</span> 
           </a>
           <button class="prise-button" type="button" aria-label="Добавить Перфоратор BOSCH BFG 6000 в корзину"><span>25550 Р.</span></button>
+          <div class="popular-goods-item-buttons"><span class="good-item-bookmark"><button class="button-buy" type="button">Купить</button> <button class="button-bookmark" type="button">В Закладки</button></span></div>
         </li>
         <li>  
           <a href="#" class="popular-goods-item bfg-2000-3000 new">
@@ -233,6 +246,7 @@
               <span class="goods-item-oldprice">22500 Р.</span> 
           </a>
           <button class="prise-button" type="button" aria-label="Добавить Перфоратор BOSCH BFG 3000 в корзину"><span>15500 Р.</span></button>
+          <div class="popular-goods-item-buttons"><span class="good-item-bookmark"><button class="button-buy" type="button">Купить</button> <button class="button-bookmark" type="button">В Закладки</button></span></div>
         </li>  
         <li>
           <a href="#" class="popular-goods-item bfg-6000">
@@ -244,6 +258,7 @@
               <span class="goods-item-oldprice">30500 Р.</span> 
           </a>
           <button class="prise-button" type="button" aria-label="Добавить Перфоратор BOSCH BFG 6000 в корзину"><span>25500 Р.</span></button>
+          <div class="popular-goods-item-buttons"><span class="good-item-bookmark"><button class="button-buy" type="button">Купить</button> <button class="button-bookmark" type="button">В Закладки</button></span></div>
         </li>
         <li>  
           <a href="#" class="popular-goods-item bfg-2000-3000 new">
@@ -254,6 +269,7 @@
               <img src="img/bfg_2000_3000.jpg" alt="Перфоратор BOSCH BFG 2000" width="127" height="112">
              </a>
           <button class="prise-button" type="button" aria-label="Добавить Перфоратор BOSCH BFG 2000 в корзину"><span>12500 Р.</span></button>
+          <div class="popular-goods-item-buttons"><span class="good-item-bookmark"><button class="button-buy" type="button">Купить</button> <button class="button-bookmark" type="button">В Закладки</button></span></div>
         </li>
         <li>  
           <a href="#" class="popular-goods-item bfg-2000-3000 new">
@@ -265,6 +281,7 @@
               <span class="goods-item-oldprice">22500 Р.</span> 
           </a>
           <button class="prise-button" type="button" aria-label="Добавить Перфоратор BOSCH BFG 3000 в корзину"><span>15500 Р.</span></button>
+          <div class="popular-goods-item-buttons"><span class="good-item-bookmark"><button class="button-buy" type="button">Купить</button> <button class="button-bookmark" type="button">В Закладки</button></span></div>
         </li>
         <li>  
           <a href="#" class="popular-goods-item bfg-6000">
@@ -276,6 +293,7 @@
               <span class="goods-item-oldprice">30500 Р.</span> 
           </a>
           <button class="prise-button" type="button" aria-label="Добавить Перфоратор BOSCH BFG 6000 в корзину"><span>25500 Р.</span></button>
+          <div class="popular-goods-item-buttons"><span class="good-item-bookmark"><button class="button-buy" type="button">Купить</button> <button class="button-bookmark" type="button">В Закладки</button></span></div>
         </li>
         <li> 
           <a href="#" class="popular-goods-item bfg-2000-3000 new">
@@ -286,6 +304,7 @@
               <img src="img/bfg_2000_3000.jpg" alt="Перфоратор BOSCH BFG 2000" width="127" height="112">
               </a>
               <button class="prise-button" type="button" aria-label="Добавить Перфоратор BOSCH BFG 2000 в корзину"><span>12500 Р.</span></button>
+              <div class="popular-goods-item-buttons"><span class="good-item-bookmark"><button class="button-buy" type="button">Купить</button> <button class="button-bookmark" type="button">В Закладки</button></span></div>
         </li>
       </ul>
     </div>
@@ -311,70 +330,74 @@
 
   <footer class="page-footer">
     <div class="footer-nav-wrapper">
-    <div class="footer-section-nav">
-    <a href="#"><img src="img/logo_footer.png" width="220" height="68" alt="Техномарт"></a>
-    
-    <section class="footer-nav">
-      <h2 class="hidden-header">Навигация</h2>
-      <ul class="footer-nav-menu">
-        <li><a href="#">Компания</a></li>
-        <li><a href="#">Новости</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
-    </section>
-    
-    <section class="footer-adress">
-      <h2 class="hidden-header">Наш адрес</h2>
-      <p class="footer-adress-info">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
-        <a href="tel:+78125550555">+7 (812) 555-05-55</a></p>
-    </section>
-
-    <section class="footer-assortment">
-      <h2 class="hidden-header">Ассортимент товара</h2>
-      <ul class="footer-assortment-menu">
-        <li><a href="#">Материалы</a></li>
-        <li><a href="#">Техника</a></li>
-        <li><a href="#">Инструмент</a></li>
-        <li><a href="#">Спецпредложения</a></li>
-      </ul>
-    </section>
-    </div>
-    </div>
+      <div class="footer-section-nav">
+      <a href="#"><img src="img/logo_footer.png" width="220" height="68" alt="Техномарт"></a>
+      
+      <section class="footer-nav">
+        <h2 class="hidden-header">Навигация</h2>
+        <ul class="footer-nav-menu">
+          <li><a href="#">Компания</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </section>
+      
+      <section class="footer-adress">
+        <h2 class="hidden-header">Наш адрес</h2>
+        <p class="footer-adress-info"><span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span> <br>
+          <a href="tel:+78125550555">+7 (812) 555-05-55</a></p>
+      </section>
+  
+      <section class="footer-assortment">
+        <h2 class="hidden-header">Ассортимент товара</h2>
+        <ul class="footer-assortment-menu">
+          <li><a href="#">Материалы</a></li>
+          <li><a href="#">Техника</a></li>
+          <li><a href="#">Инструмент</a></li>
+          <li><a href="#">Спецпредложения</a></li>
+        </ul>
+      </section>
+      </div>
+      </div>
     
     <div class="footer-social-wrapper">
-    <section class="footer-social">
-      <p class="footer-copy">&copy;2010–2019 Компания «Техномарт» <br> Все права защищены</p>
-        <h2 class="hidden-header">Соц. сети</h2>
-        <ul class="footer-social-menu">
-          <li><a class="social-vk" href="https://vk.com/">
-            <span class="hidden-header">Вконтакте</span>
-            <svg aria-hidden="true" focusable="false" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path id="vk" fill-rule="evenodd" clip-rule="evenodd" d="M22.1627 1.4839C33.6533 1.4839 42.9683 10.5873 42.9683 21.8169C42.9683 33.0461 33.6533 42.1494 22.1627 42.1494C10.6721 42.1494 1.35714 33.0461 1.35714 21.8169C1.35714 10.5873 10.6721 1.4839 22.1627 1.4839Z" fill="#212A3A"/>
-            <path d="M24.5403 25.7281C25.4609 25.4384 26.6396 27.6406 27.8943 28.4834C28.8361 29.1219 29.5573 28.9841 29.5573 28.9841L32.9017 28.9372C32.9017 28.9372 34.6495 28.8322 33.8233 27.4803C33.7549 27.3678 33.3389 26.4781 31.334 24.6472C29.2376 22.7319 29.5217 23.0422 32.0456 19.7309C33.5835 17.7125 34.1988 16.4797 34.0062 15.9547C33.8213 15.4494 32.6918 15.5806 32.6918 15.5806L28.9237 15.6059C28.5568 15.6069 28.2458 15.7175 28.1042 16.0887C28.1013 16.0925 27.5062 17.6506 26.7127 18.9753C25.0362 21.7775 24.367 21.9266 24.0896 21.7512C23.4531 21.3453 23.6139 20.1228 23.6139 19.2537C23.6139 16.5378 24.0299 15.4053 22.7993 15.1128C22.3881 15.0153 22.0876 14.9516 21.039 14.9422C19.6985 14.9225 18.5603 14.9422 17.9151 15.2506C17.4866 15.4597 17.1582 15.9181 17.3576 15.9444C17.6079 15.9772 18.1693 16.0944 18.4698 16.4937C18.8559 17.0112 18.8444 18.1709 18.8444 18.1709C18.8444 18.1709 19.0649 21.3687 18.3244 21.7653C17.8159 22.0372 17.1207 21.4822 15.6252 18.9378C14.8616 17.6366 14.2847 16.1984 14.2847 16.1984C14.2847 16.1984 14.173 15.9312 13.9708 15.785C13.7301 15.6116 13.393 15.5562 13.393 15.5562L9.81659 15.5787C9.81659 15.5787 9.27926 15.5937 9.08185 15.8244C8.90659 16.0287 9.06741 16.4506 9.06741 16.4506C9.06741 16.4506 11.8687 22.9016 15.0407 26.1509C17.9488 29.1341 21.2537 28.9362 21.2537 28.9362H22.7511C22.7511 28.9362 23.2027 28.8856 23.4339 28.6437C23.6496 28.4187 23.6399 27.9959 23.6399 27.9959C23.6399 27.9959 23.6101 26.0187 24.5403 25.7281Z" fill="white"/>
-            </svg>
-          </a></li>
-          <li><a class="social-insta" href="http://instagram.com">
-            <span class="hidden-header">Инстаграм</span>
-            <svg aria-hidden="true" focusable="false" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path id="insta" fill-rule="evenodd" clip-rule="evenodd" d="M21.8938 1.4839C33.1232 1.4839 42.2265 10.5873 42.2265 21.8169C42.2265 33.0461 33.1232 42.1494 21.8938 42.1494C10.6643 42.1494 1.56108 33.0461 1.56108 21.8169C1.56108 10.5873 10.6643 1.4839 21.8938 1.4839Z" fill="#212A3A"/>
-            <path d="M28 15V11H24C21.7909 11 20 12.7909 20 15V19H16V23H20V33H24V23H28V19H24V15H28Z" fill="white"/>
-            </svg>
-          </a></li>
-          <li><a class="social-fb" href="https://www.facebook.com/">
-            <span class="hidden-header">Фейсбук</span>
-            <svg aria-hidden="true" focusable="false" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path id="fb" fill-rule="evenodd" clip-rule="evenodd" d="M21.8938 1.4839C33.1233 1.4839 42.2265 10.5873 42.2265 21.8169C42.2265 33.0461 33.1233 42.1494 21.8938 42.1494C10.6643 42.1494 1.56112 33.0461 1.56112 21.8169C1.56112 10.5873 10.6643 1.4839 21.8938 1.4839Z" fill="#212A3A"/>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M14 11H29C30.65 11 32 12.35 32 14V29C32 30.65 30.65 32 29 32H14C12.35 32 11 30.65 11 29V14C11 12.35 12.35 11 14 11ZM25 21.5C25 19.57 23.43 18 21.5 18C19.57 18 18 19.57 18 21.5C18 23.43 19.57 25 21.5 25C23.43 25 25 23.43 25 21.5ZM14 29V20H15.181C15.0626 20.4913 15.0019 20.9947 15 21.5C15 25.0899 17.9101 28 21.5 28C25.0899 28 28 25.0899 28 21.5C27.9986 20.9946 27.9379 20.4912 27.819 20H29V29H14ZM25 18H29V14H25V18Z" fill="white"/>
-            </svg>
+      <section class="footer-social">
+        <p class="footer-copy">&copy; 2010–2019 Компания «Техномарт» <br> Все права защищены</p>
+          <h2 class="hidden-header">Соц. сети</h2>
+          <ul class="footer-social-menu">
+  
+            <li><a class="social-vk" href="https://vk.com/">
+              <span class="hidden-header">Вконтакте</span>
+              <svg aria-hidden="true" focusable="false" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path id="vk" fill-rule="evenodd" clip-rule="evenodd" d="M22.1627 1.4839C33.6533 1.4839 42.9683 10.5873 42.9683 21.8169C42.9683 33.0461 33.6533 42.1494 22.1627 42.1494C10.6721 42.1494 1.35714 33.0461 1.35714 21.8169C1.35714 10.5873 10.6721 1.4839 22.1627 1.4839Z" fill="#212A3A"/>
+              <path d="M24.5403 25.7281C25.4609 25.4384 26.6396 27.6406 27.8943 28.4834C28.8361 29.1219 29.5573 28.9841 29.5573 28.9841L32.9017 28.9372C32.9017 28.9372 34.6495 28.8322 33.8233 27.4803C33.7549 27.3678 33.3389 26.4781 31.334 24.6472C29.2376 22.7319 29.5217 23.0422 32.0456 19.7309C33.5835 17.7125 34.1988 16.4797 34.0062 15.9547C33.8213 15.4494 32.6918 15.5806 32.6918 15.5806L28.9237 15.6059C28.5568 15.6069 28.2458 15.7175 28.1042 16.0887C28.1013 16.0925 27.5062 17.6506 26.7127 18.9753C25.0362 21.7775 24.367 21.9266 24.0896 21.7512C23.4531 21.3453 23.6139 20.1228 23.6139 19.2537C23.6139 16.5378 24.0299 15.4053 22.7993 15.1128C22.3881 15.0153 22.0876 14.9516 21.039 14.9422C19.6985 14.9225 18.5603 14.9422 17.9151 15.2506C17.4866 15.4597 17.1582 15.9181 17.3576 15.9444C17.6079 15.9772 18.1693 16.0944 18.4698 16.4937C18.8559 17.0112 18.8444 18.1709 18.8444 18.1709C18.8444 18.1709 19.0649 21.3687 18.3244 21.7653C17.8159 22.0372 17.1207 21.4822 15.6252 18.9378C14.8616 17.6366 14.2847 16.1984 14.2847 16.1984C14.2847 16.1984 14.173 15.9312 13.9708 15.785C13.7301 15.6116 13.393 15.5562 13.393 15.5562L9.81659 15.5787C9.81659 15.5787 9.27926 15.5937 9.08185 15.8244C8.90659 16.0287 9.06741 16.4506 9.06741 16.4506C9.06741 16.4506 11.8687 22.9016 15.0407 26.1509C17.9488 29.1341 21.2537 28.9362 21.2537 28.9362H22.7511C22.7511 28.9362 23.2027 28.8856 23.4339 28.6437C23.6496 28.4187 23.6399 27.9959 23.6399 27.9959C23.6399 27.9959 23.6101 26.0187 24.5403 25.7281Z" fill="white"/>
+              </svg>
             </a></li>
-        </ul>
-      <p class="footer-mail">Обратная связь:<br><a href="mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-      <p class="footer-developed">Разработано —<br><a href="htmlacademy.ru">htmlacademy.ru</a></p>
-      
-    </section>
-    </div>
+  
+            <li><a class="social-insta" href="http://instagram.com">
+              <span class="hidden-header">Инстаграм</span>
+              <svg aria-hidden="true" focusable="false" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path id="insta" fill-rule="evenodd" clip-rule="evenodd" d="M21.8938 1.4839C33.1232 1.4839 42.2265 10.5873 42.2265 21.8169C42.2265 33.0461 33.1232 42.1494 21.8938 42.1494C10.6643 42.1494 1.56108 33.0461 1.56108 21.8169C1.56108 10.5873 10.6643 1.4839 21.8938 1.4839Z" fill="#212A3A"/>
+              <path d="M28 15V11H24C21.7909 11 20 12.7909 20 15V19H16V23H20V33H24V23H28V19H24V15H28Z" fill="white"/>
+              </svg>
+            </a></li>
+  
+            <li><a class="social-fb" href="https://www.facebook.com/">
+              <span class="hidden-header">Фейсбук</span>
+              <svg aria-hidden="true" focusable="false" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path id="fb" fill-rule="evenodd" clip-rule="evenodd" d="M21.8938 1.4839C33.1233 1.4839 42.2265 10.5873 42.2265 21.8169C42.2265 33.0461 33.1233 42.1494 21.8938 42.1494C10.6643 42.1494 1.56112 33.0461 1.56112 21.8169C1.56112 10.5873 10.6643 1.4839 21.8938 1.4839Z" fill="#212A3A"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M14 11H29C30.65 11 32 12.35 32 14V29C32 30.65 30.65 32 29 32H14C12.35 32 11 30.65 11 29V14C11 12.35 12.35 11 14 11ZM25 21.5C25 19.57 23.43 18 21.5 18C19.57 18 18 19.57 18 21.5C18 23.43 19.57 25 21.5 25C23.43 25 25 23.43 25 21.5ZM14 29V20H15.181C15.0626 20.4913 15.0019 20.9947 15 21.5C15 25.0899 17.9101 28 21.5 28C25.0899 28 28 25.0899 28 21.5C27.9986 20.9946 27.9379 20.4912 27.819 20H29V29H14ZM25 18H29V14H25V18Z" fill="white"/>
+              </svg>
+            </a>
+          </li>
+          </ul>
+        <p class="footer-mail">Обратная связь:<br><a href="mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+        <p class="footer-developed">Разработано —<br><a href="htmlacademy.ru">htmlacademy.ru</a></p>
+        
+      </section>
+      </div>
   </footer>
 
   <section class="modal modal-cart">
