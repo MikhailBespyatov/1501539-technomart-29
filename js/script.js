@@ -77,6 +77,76 @@ window.addEventListener('keydown', function (evt) {
     };
 });
 
+//Слайдер с перфораторами
+
+const sliderControlLeft = document.querySelector('.slider-button-left');
+const sliderControlRight = document.querySelector('.slider-button-right');
+const slidePerforators = document.querySelector('.slide-perforators');
+const slideDrill = document.querySelector('.slide-drill');
+const sliderLeftCircle = document.querySelector('.controls-circle-left');
+const sliderRightCircle = document.querySelector('.controls-circle-right');
+
+sliderControlLeft.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    if (slidePerforators.classList.contains('slide-current')) {
+        slidePerforators.classList.remove('slide-current');
+        slidePerforators.offsetWidth = slidePerforators.offsetWidth;
+        slideDrill.classList.add('slide-current');
+        sliderRightCircle.classList.remove('current');
+        sliderRightCircle.offsetWidth = sliderRightCircle.offsetWidth;
+        sliderLeftCircle.classList.add('current');
+    } else {
+        slideDrill.classList.remove('slide-current');
+        slideDrill.offsetWidth = slideDrill.offsetWidth;
+        slidePerforators.classList.add('slide-current');
+        sliderLeftCircle.classList.remove('current');
+        sliderLeftCircle.offsetWidth = sliderLeftCircle.offsetWidth;
+        sliderRightCircle.classList.add('current');
+    }
+}); 
+
+sliderControlRight.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    if (slidePerforators.classList.contains('slide-current')) {
+        slidePerforators.classList.remove('slide-current');
+        slidePerforators.offsetWidth = slidePerforators.offsetWidth;
+        slideDrill.classList.add('slide-current');
+        sliderRightCircle.classList.remove('current');
+        sliderRightCircle.offsetWidth = sliderRightCircle.offsetWidth;
+        sliderLeftCircle.classList.add('current');
+    } else {
+        slideDrill.classList.remove('slide-current');
+        slideDrill.offsetWidth = slideDrill.offsetWidth;
+        slidePerforators.classList.add('slide-current');
+        sliderLeftCircle.classList.remove('current');
+        sliderLeftCircle.offsetWidth = sliderLeftCircle.offsetWidth;
+        sliderRightCircle.classList.add('current');
+    }
+}); 
+
+//Список сервисов
+const serviseItemButtons = document.querySelectorAll('.services-item-button');
+const serviceDescriptions = document.querySelectorAll('.service-description');
+
+const removeActive = function (array, className) {
+    array.forEach(function (it) {
+        it.classList.remove(className);
+    })
+}
+
+serviseItemButtons.forEach(function (button, index) {
+    button.addEventListener('click', function (evt) {
+        evt.preventDefault();
+        removeActive(serviseItemButtons, 'services-menu-current');
+        removeActive(serviceDescriptions, 'services-item-current');
+
+        serviseItemButtons[index].classList.add('services-menu-current');
+        serviceDescriptions[index].classList.add('services-item-current');
+    })
+})
+
+
+
 }
 //Модальное окно корзины 
 const cartPopup = document.querySelector('.modal-cart');
