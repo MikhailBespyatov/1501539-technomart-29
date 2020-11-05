@@ -684,6 +684,13 @@ button {
     bottom: 27px;
 }
 
+.slide-button a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
 .slider-controls-circle {
     position: absolute;
     left: 295px;
