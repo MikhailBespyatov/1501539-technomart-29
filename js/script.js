@@ -1,5 +1,8 @@
 //Модальное окно логина
 const popup = document.querySelector('.modal-login');
+
+if (popup) {
+
 let openPopupButton = document.querySelector('.button-contacts');
 const closePopupButton = popup.querySelector('.modal-close');
 const loginForm = popup.querySelector('.modal-login-form');
@@ -74,17 +77,28 @@ window.addEventListener('keydown', function (evt) {
     };
 });
 
+}
 //Модальное окно корзины 
 const cartPopup = document.querySelector('.modal-cart');
+const openCartPopupButton = document.querySelectorAll('.button-buy');
+const closeCartPopupButton = cartPopup.querySelector('.modal-close');
 
-const openCartPopupButton = document.querySelectorAll('.prise-button');
- 
-let openCartPopup = function (button, cartPopup) {
-    button.addEventListener('click', function () {
-        cartPopup.classList.add('modal-show');
-    });
-};
+openCartPopupButton.forEach(function(button) {
+    button.addEventListener("click", function(evt) {
+      evt.preventDefault();
+      cartPopup.classList.add('modal-show');
+    })
+  });
 
-for (var i = 0; i < openCartPopupButton.length; i++ ) {
-    openCartPopup(openCartPopupButton[i], cartPopup);
-};
+closeCartPopupButton.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    if (cartPopup.classList.contains('modal-show')) {
+    cartPopup.classList.remove('modal-show')
+    }
+});
+
+document.addEventListener('keydown', function(evt) {
+    if (evt.keyCode === 27) {
+        cartPopup.classList.remove('modal-show')
+    }
+})

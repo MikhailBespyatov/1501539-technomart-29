@@ -806,7 +806,6 @@ button {
     visibility: hidden;
 }
 
-
 .popular-goods-header button {
     margin-right: 2px;
     margin-top: -1px;
@@ -934,6 +933,7 @@ button {
     background-image: url(../img/new.png);
     background-repeat: no-repeat;
     background-position: 0 0;
+    z-index: 1;
 }
 
 
@@ -1512,8 +1512,8 @@ button {
 }
 
 .good-item-bookmark {
-    margin-left: -20px;
-    margin-top: -1px;
+    margin-left: -21px;
+    margin-top: 10px;
     margin-bottom: 20px;
 }
 
@@ -1875,7 +1875,7 @@ button {
     left: 18px;
 }
   
-  .range-controls .toggle-max {
+.range-controls .toggle-max {
     left: 160px;
 }
 
@@ -2290,6 +2290,7 @@ button {
 .modal-show {
     display: block;
     animation: bounce 0.6s;
+    z-index: 2;
 }
 
 .modal-error {
