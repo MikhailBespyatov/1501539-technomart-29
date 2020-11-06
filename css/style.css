@@ -648,7 +648,7 @@
      width: 44px;
      height: 65px;
      background-color: transparent;
-     background-image: url(../img/materials_logo.svg);
+     background-image: url(../img/materials-logo.svg);
      background-repeat: no-repeat;
      background-position: 0 0;
  }
@@ -1335,7 +1335,7 @@
      height: 235px;
      left: 141px;
      top: 20px;
-     background-image: url(../img/delivery_car.png);
+     background-image: url(../img/delivery-car.png);
      background-repeat: no-repeat;
      background-position: 0 0;
  }
