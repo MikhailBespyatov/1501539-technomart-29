@@ -106,7 +106,6 @@
  }
  
  .popular-goods-item:hover {
-    border: 1px solid #EAEAEA;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
@@ -318,7 +317,7 @@
      fill: var(--white);
  }
  
- .header-menu-search input:focus + .search-svg #search-svg {
+ input:focus + .search-svg #search-svg {
      fill: var(--basic-red);
  }
  
@@ -900,6 +899,7 @@
  
  .popular-goods-menu li {
      position: relative;
+     border: 1px solid #EAEAEA;
  }
  
  .popular-goods-header {
@@ -969,10 +969,6 @@
  .popular-goods-header .manufacturers-button {
      margin-right: 7px;
      margin-top: -2px;
- }
- 
- .popular-goods-menu li {
-    border: 1px solid #EAEAEA;
  }
 
  .popular-goods-item {
@@ -1270,7 +1266,7 @@
  }
  
  .main-services p {
-     font-family: "PT Sans", sans-serif;
+     font-family: "PT Sans", Arial, sans-serif;
      font-size: 13px;
      line-height: 24px;
      margin-top: -1px;
@@ -1738,7 +1734,6 @@
  
  .button-contacts {
      width: 300px;
-     padding-top: 4px;
      display: -webkit-box;
      display: -ms-flexbox;
      display: flex;
@@ -1835,7 +1830,7 @@
  
  .catalog-login-svg {
      position: absolute;
-     top: 14px;
+     top: 12px;
      right: 17px;
  }
  
@@ -2005,11 +2000,7 @@
  }
  
  .button-bookmark:active {
-     color: #32425C;
-     border: 3px solid #32425C;
-     -webkit-box-sizing: border-box;
-             box-sizing: border-box;
-     border-radius: 2px; 
+     opacity: 0.3;
  }
  
  
@@ -2474,16 +2465,28 @@
      text-align: center;
      vertical-align: center;
      color: #000000;
+     box-sizing: border-box;
  }
  
  .min-price input {
-     padding-left: 5px;  
+     padding-left: 3px;
  }
  
  .max-price input {
-     padding-left: 17px;
+     padding-left: 3px;
  }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
  
+input[type=number] {
+  -moz-appearance:textfield;
+}
+
+
  .price-controls span {
      font-family: "PT Sans", Arial, sans-serif;
      font-size: 16px;
@@ -2504,12 +2507,14 @@
      font-family: "PT Sans", Arial, sans-serif;
      font-size: 17px;
      color: #000000;
+     opacity: 1;
  }
  
  .price-controls input:-moz-placeholder  {
      font-family: "PT Sans", Arial, sans-serif;
      font-size: 17px;
      color: #000000;
+     opacity: 1;
  }
  
  .price-controls input:-ms-input-placeholder {
@@ -2732,6 +2737,7 @@
  
  .catalog-goods-menu li {
      position: relative;
+     border: 1px solid #EAEAEA;
  }
  
  .filters-goods-wrapper {
@@ -2919,6 +2925,9 @@
      display: block;
      width: 943px;
      height: 449px;
+     background-image: url(../img/map-popup.png);
+     background-repeat: no-repeat;
+     background-position:  0;
  }
  
  .modal-map img {
